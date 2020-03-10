@@ -8,13 +8,13 @@
 # Can you do it like a boss? Do it without using any builtin function like __builtin_popcount in c++ or in any other language.
 
 
-def count_bits1(num) #first way
-    binary = []
-    (0..num).each do |n|
-        binary.push n.to_s(2).count("1")
-    end
-    binary
-end
+# def count_bits1(num) #first way
+#     binary = []
+#     (0..num).each do |n|
+#         binary.push n.to_s(2).count("1")
+#     end
+#     binary
+# end
 def count_bits(num)  #linear time O(n)
     binary = [0]
     (1..num).each do |n|

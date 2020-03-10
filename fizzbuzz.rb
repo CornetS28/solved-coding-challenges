@@ -30,8 +30,6 @@ def fizzbuzzThirdWay(num)
  puts (x.empty? ? num : x)
 end
 
-
-
 fizzbuzzFirstWay(15)
 fizzbuzzSecondWay(15)
 fizzbuzzThirdWay(61)

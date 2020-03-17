@@ -12,4 +12,8 @@ def convert_to_binary(integer)
   integer.to_s(2)
 end
 
+def convert_to_binary(integer)
+  
+end
+
 puts convert_to_binary(13)

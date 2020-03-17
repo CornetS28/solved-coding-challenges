@@ -26,7 +26,7 @@ def narcissistic?(value)
 end
 
 def narcissistic?(value)
-  value == value.digits.map { |i| i**value.digits.count}.sum
+  value == value.digits.map { |i| i**value.digits.count }.sum
 end
 puts narcissistic?(153)
 

@@ -28,7 +28,7 @@ def find_missing_letter(arr) # 3rd way
 end
 
 def find_missing_letter(arr) # 4th way
-  arr.each { |letter| return letter.next unless arr.include?(letter.next) }
+  arr.each { |letter| return letter.next if !arr.include?(letter.next) }
 end
 
 def find_missing_letter(arr) # 5th way

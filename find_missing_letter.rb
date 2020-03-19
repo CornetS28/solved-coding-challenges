@@ -27,4 +27,11 @@ def find_missing_letter(arr) # 3rd way
   arr.each { |letter| return letter.next unless arr.include?(letter.next) }
 end
 
+def find_missing_letter(arr) # 4th way
+  arr.each { |letter| return letter.next unless arr.include?(letter.next) }
+end
+
+def find_missing_letter(arr) # 5th way
+  ([*arr[0]..arr[-1]] - arr).join
+end
 p find_missing_letter(%w[a b c d f])

@@ -36,8 +36,17 @@
 # productFib(714) # should return {21, 34, true}, 
 # productFib(800) # should return {34, 55, false}, 
 
-def fibonacci(num)
-  num <= 1 ? num : fibonacci(num - 1) + fibonacci(num - 2) 
-end
+# def fibonacci(num)
+#   num <= 1 ? num : fibonacci(num - 1) + fibonacci(num - 2) 
+# end
 
-puts fibonacci(6)
+# def fibonacci(num)
+#   return  num if (0..1).include? num
+#   fibonacci(num - 1) + fibonacci(num -2)
+# end
+
+
+def fibonacci(num)
+    ((0..1).include?(num)) ? num :  fibonacci(num - 1) + fibonacci(num -2)
+end
+puts fibonacci(5)

@@ -11,18 +11,16 @@
 # You can not assume that the integer will be only positive. You may be given negative numbers as well (or 0).
 # There are no fancy optimizations required, but still the most trivial solutions might time out. Try to find a solution which does not loop all the way up to n.
 
-# def is_prime(num)
-#   num.modulo(2) ? true : false
-# end
+def is_prime(num)
+  num.modulo(2) ? true : false
+end
 
-# def is_prime(num)
-#   num.modulo(2) ? true : false
-# end
+def is_prime(num)
+  num.modulo(2) == 0
+end
 
 def is_prime(num)
   num % 2 == 0
 end
 
-
-
-puts is_prime(8)
+puts is_prime(7)

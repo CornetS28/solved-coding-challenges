@@ -26,12 +26,13 @@ end
 
 def valid_parentheses(string)
   string.chars.inject(0) do |open, char|
-    case
-    when open < 0; break
-    when char == '('; open += 1
-    when char == ')'; open -= 1
+    case 
+      when open < 0; break
+      when char == '('; open += 1
+      when char == ')'; open -= 1
     end
     open
   end == 0
 end
 puts valid_parentheses("()")
+

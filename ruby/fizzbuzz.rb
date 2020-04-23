@@ -25,11 +25,12 @@ end
 
 def fizzbuzzThirdWay(num)
  x = ''
- x += "Fizz" if num % 3 == 0
- x += "Buzz" if num % 5 == 0
+ x += 'Fizz' if num % 3 == 0
+ x += 'Buzz' if num % 5 == 0
  puts (x.empty? ? num : x)
 end
 
 fizzbuzzFirstWay(15)
 fizzbuzzSecondWay(15)
 fizzbuzzThirdWay(61)
+

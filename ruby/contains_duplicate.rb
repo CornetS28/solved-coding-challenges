@@ -1,3 +1,3 @@
 def contains_duplicate(nums)
-  nums.size != nums.uniq.size 
+  nums.size != nums.uniq.size
 end

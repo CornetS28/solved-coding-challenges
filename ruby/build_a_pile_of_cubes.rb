@@ -15,23 +15,28 @@ def find_nb(m)
 
   while sum < m
     n += 1
-    sum += n**3
-    # puts n
+      sum += n**3
   end
   return sum == m ? n : -1
 end
 
-def find_nb(m)
-  (1..Float::INFINITY).each do |n|
+# def find_nb(m)
+#   (1..Float::INFINITY).each do |n|
 
-    if (1..n).inject(0) { |sum, value| sum + value**3 } == m
-      return n
-    else
-      next
-    end
-  end
-end
+#     if (1..n).inject(0) { |sum, value| sum + value**3 } == m
+#       return n
+#     else
+#       next
+#     end
+#   end
+# end
 
-# p (1..Float::INFINITY).take(10)
-# p ("a"..).take(6)
-puts find_nb(1_071_225)
+# 1.upto(10) { | i | puts i }
+
+# p (1..Float::INFINITY).take(10) 
+# v = []
+  1.upto(10){|b| v << b }
+ p v == (1..Float::INFINITY).take(10)
+# 1.upto(10){|b| p b }
+# p ("a"..).take(26)
+# puts find_nb(225)

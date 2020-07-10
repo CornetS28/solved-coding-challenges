@@ -8,6 +8,5 @@ def shortest_palindrome(s)
    end 
 end
 
-
 # puts shortest_palindrome("dcbabcd")
 puts shortest_palindrome("aacecaaa")

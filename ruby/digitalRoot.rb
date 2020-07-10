@@ -32,12 +32,12 @@
 
 def digital_root(num)
   return num if num < 10
-  output = digital_root(num / 10) + num % 10
+ p output = digital_root(num / 10) + num % 10
   output >= 10 ? digital_root(output) : output
 end
 
-def digital_root(num)
- num < 10 ? num : (digital_root(num / 10) + num % 10 >= 10 ? digital_root(digital_root(num / 10) + num % 10) : digital_root(num / 10) + num % 10)
-end
+# def digital_root(num)
+#  num < 10 ? num : (digital_root(num / 10) + num % 10 >= 10 ? digital_root(digital_root(num / 10) + num % 10) : digital_root(num / 10) + num % 10)
+# end
 
-puts digital_root(34)
+puts digital_root(341)
